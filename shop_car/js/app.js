@@ -1,6 +1,6 @@
 // variables
 const carrito = document.querySelector('#carrito');
-const shopcar = document.querySelector('lista-carrito tbody');
+const shopcar = document.querySelector('#lista-carrito tbody');
 const cleanshop = document.querySelector('#vaciar-carrito');
 const productos = document.querySelector('#lista-productos');
 let articulos = [];
@@ -36,6 +36,11 @@ function leerDatosProducto(producto) {
 
 // muestra los articulos en el HTML
 function carritoHTML() {
+
+    // limpiar HTML
+    limpiarHTML();
+
+    // recorre el carrito y genera el HTML
     articulos.forEach((producto) => {
         const row = document.createElement('tr');
         row.innerHTML = `
@@ -47,4 +52,12 @@ function carritoHTML() {
         // agrega el HTML al tbody
         shopcar.appendChild(row);
     });
+};
+
+// limpia el tbody
+function limpiarHTML() {
+    ///shopcar.innerHTML = ''; ---- esto casi ya no se usa...
+    while(shopcar.firstChild) {
+        shopcar.removeChild(shopcar.firstChild)
+    }
 };
