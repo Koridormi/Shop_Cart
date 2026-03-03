@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Carrito</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+<header id="header" class="header">
+    <div class="container">
+        <div class="row">
+            <div class="four columns">
+                <img src="img/haise/logo.png" id="logo">
+            </div>
+            <div class="two columns u-pull-right">
+                <ul>
+                    <li class="submenu">
+                            <img src="img/cart.png" id="img-carrito">
+                            <div id="carrito">
+                                    
+                                    <table id="lista-carrito" class="u-full-width">
+                                        <thead>
+                                            <tr>
+                                                <th>Imagen</th>
+                                                <th>Nombre</th>
+                                                <th>Precio</th>
+                                                <th>Cantidad</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+
+                                    <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                            </div>
+                    </li>
+                </ul>
+            </div>
+        </div> 
+    </div>
+    </header>
+
+
+    <div id="hero">
+        <div class="container">
+            <div class="row">
+                    <div class="six columns">
+                        <div class="contenido-hero">
+                                <h2>Compra lo que quieras</h2>
+                                <p>Liquidacion por precios bajos!!</p>
+                                <form action="#" id="busqueda" method="post" class="formulario">
+                                    <input class="u-full-width" type="text" placeholder="¿Que te gustaría Comprar?" id="buscador">
+                                    <input type="submit" id="submit-buscador" class="submit-buscador">
+                                </form>
+                        </div>
+                    </div>
+            </div> 
+        </div>
+    </div>
+
+    <div class="barra">
+        <div class="container">
+            <div class="row">
+                    <div class="four columns icono icono1">
+                        <p>Desde juguetess.. <br>
+                        Hasta lo que mas te guste!!</p>
+                    </div>
+                    <div class="four columns icono icono2">
+                        <p>Totalmente Nuevos <br>
+                        Con garantia de 1 mes</p>
+                    </div>
+                    <div class="four columns icono icono3">
+                        <p>Felicidad garantizada <br>
+                        compra cuanto quieras</p>
+                    </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="lista-cursos" class="container">
+        <h1 id="encabezado" class="encabezado">Productos en Stock!</h1>
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/haise/item1.png" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>Mando de PlayStaion Original</h4>
+                        <p>Sony Entertainment</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$350  <span class="u-pull-right ">$279.99</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar Al Carrito</a>
+                    </div>
+                </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/haise/item2.png" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>Osito de Peluche Para Regalar</h4>
+                            <p>Pedro Gomez</p>
+                            <img src="img/estrellas.png">
+                            <p class="precio">$25  <span class="u-pull-right ">$13.99</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="2">Agregar Al Carrito</a>
+                        </div>
+                    </div>
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/haise/item3.png" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>Lego Batman Original</h4>
+                            <p>Lego INC</p>
+                            <img src="img/estrellas.png">
+                            <p class="precio">$275  <span class="u-pull-right ">$219.99</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="3">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+
+        </div> <!--.row-->
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/haise/item4.png" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>Figura Anime de Colegiala Resistente a Liquidos</h4>
+                        <p>HentaiLA</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$150  <span class="u-pull-right ">$119.99</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="4">Agregar Al Carrito</a>
+                    </div>
+                </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/haise/item5.png" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>Bozz Lighier Toy Story</h4>
+                            <p>Pixar Animation Studios</p>
+                            <img src="img/estrellas.png">
+                            <p class="precio">$115  <span class="u-pull-right ">$74.99</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="5">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/haise/item6.png" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>Hueso de Plastico para Therians</h4>
+                            <p>Therian911</p>
+                            <img src="img/estrellas.png">
+                            <p class="precio">$20  <span class="u-pull-right ">$9.99</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="6">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+        </div> <!--.row-->
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/haise/item7.png" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>Lost Media de 2024</h4>
+                        <p>The00Hacker</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$350  <span class="u-pull-right ">$259.99</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="7">Agregar Al Carrito</a>
+                    </div>
+                </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/haise/item8.png" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>Piezas de repuesto</h4>
+                            <p>Ingeneria Juan Pablo</p>
+                            <img src="img/estrellas.png">
+                            <p class="precio">$25  <span class="u-pull-right ">$9.99</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="8">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/haise/item9.png" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>Figura Anime - Eren Jaeger</h4>
+                            <p>Anime-Studio</p>
+                            <img src="img/estrellas.png">
+                            <p class="precio">$150  <span class="u-pull-right ">$119.99</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="9">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+        </div> <!--.row-->
+        <div class="row">
+                <div class="four columns">
+                    <div class="card">
+                        <img src="img/haise/item10.png" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>Anya Forger - Figura Kawaii</h4>
+                            <p>Anime-Studio</p>
+                            <img src="img/estrellas.png">
+                            <p class="precio">$165  <span class="u-pull-right ">$99.99</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="10">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+                </div>
+                <div class="four columns">
+                        <div class="card">
+                            <img src="img/haise/item11.png" class="imagen-curso u-full-width">
+                            <div class="info-card">
+                                <h4>Dinosaurio de Juguete - Plastico</h4>
+                                <p>Jhon-Lets</p>
+                                <img src="img/estrellas.png">
+                                <p class="precio">$25  <span class="u-pull-right ">$12.99</span></p>
+                                <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="11">Agregar Al Carrito</a>
+                            </div>
+                        </div> <!--.card-->
+                </div>
+                <div class="four columns">
+                        <div class="card">
+                            <img src="img/haise/item12.png" class="imagen-curso u-full-width">
+                            <div class="info-card">
+                                <h4>Replica Exacta de Modelo de Automovil</h4>
+                                <p>John-Lets</p>
+                                <img src="img/estrellas.png">
+                                <p class="precio">$100  <span class="u-pull-right ">$59.99</span></p>
+                                <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="12">Agregar Al Carrito</a>
+                            </div>
+                        </div> <!--.card-->
+                </div>
+            </div> <!--.row-->
+    </div>  
+
+    <script src="js/app.js"></script>
+
+</body>
+</html>
